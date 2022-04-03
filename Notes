@@ -1,1 +1,8 @@
+Workflow (build.yml) can be executed
+    - manually
+    - automatically on push to master
+
 1. Create File .github/workflows/build.yml
+2. Git push
+    - Workflow will be executed automatically
+
