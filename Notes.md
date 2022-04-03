@@ -1,3 +1,6 @@
+## Link
+https://aws.plainenglish.io/hands-on-ci-cd-for-spring-boot-applications-using-github-actions-and-aws-1cbc1e2c9d54
+
 ## GitHub Actions
 Workflow (build.yml) can be executed
     - manually
@@ -26,7 +29,7 @@ Workflow (build.yml) can be executed
 ### GitHub secrets
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
-- AWS_SESSION_TOKEN: optional
+- AWS_SESSION_TOKEN (optional)
 
 ![alt](img/github-secrets.png)
 
@@ -35,8 +38,11 @@ Workflow (build.yml) can be executed
 1. Create File .github/workflows/build.yml
    - Jobs: test, build, deploy
 
-2. Git push
+2. server.port=5000
+
+3. Git push
    - Workflow will be executed automatically
 
-curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-sudo installer -pkg AWSCLIV2.pkg -target /
+## Result
+
+![alt](img/results.png)
