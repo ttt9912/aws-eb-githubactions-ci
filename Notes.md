@@ -2,9 +2,11 @@
 https://aws.plainenglish.io/hands-on-ci-cd-for-spring-boot-applications-using-github-actions-and-aws-1cbc1e2c9d54
 
 ## GitHub Actions
-Workflow (build.yml) can be executed
-    - manually
-    - automatically on push to master
+- will execute all .yml inside .github/workflows
+
+#### Jobs
+- are run parallel
+- use **needs** to make sure another job is run first (e.g. needs: build)
 
 ## How To
 
