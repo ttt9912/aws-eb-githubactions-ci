@@ -12,6 +12,7 @@ https://aws.plainenglish.io/hands-on-ci-cd-for-spring-boot-applications-using-gi
 
 ### Elastic Beanstalk
 - Create Application
+  - Name: demo-githubactions-ci-app
   - Java Corretto 11 V3.1.8
   - Code: sample application
 - Environment is created automatically
@@ -47,4 +48,4 @@ https://aws.plainenglish.io/hands-on-ci-cd-for-spring-boot-applications-using-gi
 
 ## Result
 
-![alt](img/results.png)
+![alt](./overview.png)

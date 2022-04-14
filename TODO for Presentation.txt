@@ -1,0 +1,8 @@
+[ ] HTTPS & Route53
+[ ] Database
+[ ] CI with multiple Environments
+[ ] Docker Platform
+    - vs. EKS, ECS
+    - what does this build
+[ ] Worker
+[ ] Lambda
