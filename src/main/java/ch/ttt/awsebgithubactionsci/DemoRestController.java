@@ -15,11 +15,6 @@ public class DemoRestController {
         return "OK";
     }
 
-    @GetMapping("/version")
-    public String version() {
-        return "The actual version is 1.0.0";
-    }
-
     @GetMapping("/nations")
     public List<String> nations() {
         log.info("requesting nations...");
