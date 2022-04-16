@@ -16,9 +16,13 @@ Validate
 ## Add HTTPS Listener in Elastic Beanstalk
 - only works in load balanced environments
 
-![alt](img/https-listener.png)
+![alt](img/create-https-listener.png)
 - SSL Policy Best Practice = use latest
 
 ## Create Route 53 record
 
 ![alt](img/create-alias-record.png)
+
+## HTTPS Only Access
+- ALB: Redirect HTTP --> HTTPS
+- Redirect Elasticbeanstalk URL to https://app.saturndata.net
