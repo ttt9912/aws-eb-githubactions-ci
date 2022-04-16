@@ -25,9 +25,7 @@ https://aws.plainenglish.io/hands-on-ci-cd-for-spring-boot-applications-using-gi
   - Java Corretto 11 V3.1.8
   - Code: sample application
   - Configure More Options: **High Availability**
-
-
-
+  
 #### Single instance
   - Defaults:
     - ASG min 1 max 1
@@ -71,3 +69,14 @@ https://aws.plainenglish.io/hands-on-ci-cd-for-spring-boot-applications-using-gi
 ## Result
 
 ![alt](./overview.png)
+
+### Info
+- Application artifacts are stored in S3
+
+## More Configuration Options:
+- Rolling updates
+- Send logs to CloudWatch
+- Store logs in S3
+- X-Ray Daemon
+
+--> save all those settings using **Saved Configuration**

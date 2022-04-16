@@ -6,7 +6,7 @@
 - in the same Region
 
 Request it in ACM:
-![alt](img/cert-req.png)
+![alt](dev/workspaces/aws-eb-githubactions-ci/img/cert-req.png)
 - *. enables subdomains (www., api., ...)
 
 Validate
@@ -16,12 +16,12 @@ Validate
 ## Add HTTPS Listener in Elastic Beanstalk
 - only works in load balanced environments
 
-![alt](img/create-https-listener.png)
+![alt](dev/workspaces/aws-eb-githubactions-ci/img/create-https-listener.png)
 - SSL Policy Best Practice = use latest
 
 ## Create Route 53 record
 
-![alt](img/create-alias-record.png)
+![alt](dev/workspaces/aws-eb-githubactions-ci/img/create-alias-record.png)
 
 ## HTTPS Only Access
 - ALB: Redirect HTTP --> HTTPS
