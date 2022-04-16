@@ -25,7 +25,7 @@ public class EC2MetadataRestController {
 
         return List.of(
                 String.format("Hostname: %s", httpGet(token, "http://169.254.169.254/latest/meta-data/hostname")),
-                String.format("Public Hostname: %s", httpGet(token, "http://169.254.169.254/latest/meta-data/public-hostname")),
+                String.format("Public: %s", httpGet(token, "http://169.254.169.254/latest/meta-data/public-hostname")),
                 String.format("Availability Zone: %s", httpGet(token, "http://169.254.169.254/latest/meta-data/placement/availability-zone"))
         );
     }
