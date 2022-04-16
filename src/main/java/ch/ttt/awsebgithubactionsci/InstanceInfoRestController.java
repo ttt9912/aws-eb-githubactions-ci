@@ -35,8 +35,6 @@ public class InstanceInfoRestController {
                         HttpResponse.BodyHandlers.ofString())
                 .body();
 
-        log.info("token {}",token);
-
         final String az = client.send(
                         HttpRequest.newBuilder(URI.create("http://169.254.169.254/latest/meta-data/placement/availability-zone"))
                                 .header("X-aws-ec2-metadata-token", token)
