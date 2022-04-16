@@ -20,11 +20,6 @@ class DemoRestControllerTest {
     }
 
     @Test
-    void version() {
-        assertThat(demoRestController.version(), is("The actual version is 1.0.0"));
-    }
-
-    @Test
     void nations() {
         assertThat(demoRestController.nations(), contains(
                 "Switzerland",
