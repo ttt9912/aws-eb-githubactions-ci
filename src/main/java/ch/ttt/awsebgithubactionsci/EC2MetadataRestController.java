@@ -16,16 +16,15 @@ import java.util.List;
  */
 @Slf4j
 @RestController
-public class InstanceInfoRestController {
-    // https://www.baeldung.com/java-9-http-client
+public class EC2MetadataRestController {
     private final HttpClient client = HttpClient.newHttpClient();
 
     @GetMapping("/info")
     public List<String> info() throws IOException, InterruptedException {
         final String token = requestToken();
 
-        final String hostname = get(token, "http://169.254.169.254/latest/meta-data/hostname");
-        final String az = get(token, "http://169.254.169.254/latest/meta-data/placement/availability-zone");
+        final String hostname = httpGet(token, "http://169.254.169.254/latest/meta-data/hostname");
+        final String az = httpGet(token, "http://169.254.169.254/latest/meta-data/placement/availability-zone");
 
         return List.of(
                 String.format("Hostname: %s", hostname),
@@ -33,7 +32,7 @@ public class InstanceInfoRestController {
         );
     }
 
-    private String get(final String token, final String url) throws IOException, InterruptedException {
+    private String httpGet(final String token, final String url) throws IOException, InterruptedException {
         return client.send(
                         HttpRequest.newBuilder(URI.create(url))
                                 .header("X-aws-ec2-metadata-token", token)
