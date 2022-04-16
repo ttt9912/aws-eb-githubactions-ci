@@ -15,9 +15,8 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@RequiredArgsConstructor
 public class InstanceInfoRestController {
-    private final RestTemplate restTemplate;
+    private final RestTemplate restTemplate = new RestTemplate();
 
     @GetMapping("/info")
     public String healthCheck() {
