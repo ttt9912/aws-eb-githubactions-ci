@@ -6,22 +6,27 @@
 - in the same Region
 
 Request it in ACM:
-![alt](dev/workspaces/aws-eb-githubactions-ci/img/cert-req.png)
+![alt](img/cert-req.png)
 - *. enables subdomains (www., api., ...)
 
 Validate
 - DNS validation (add a given CNAME record)
 - Email validation
 
+## From Here....:
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https-elb.html
+
+(Using Console or Configuration File)
+
 ## Add HTTPS Listener in Elastic Beanstalk
 - only works in load balanced environments
 
-![alt](dev/workspaces/aws-eb-githubactions-ci/img/create-https-listener.png)
+![alt](img/create-https-listener.png)
 - SSL Policy Best Practice = use latest
 
 ## Create Route 53 record
 
-![alt](dev/workspaces/aws-eb-githubactions-ci/img/create-alias-record.png)
+![alt](img/create-alias-record.png)
 
 ## HTTPS Only Access
 - ALB: Redirect HTTP --> HTTPS
